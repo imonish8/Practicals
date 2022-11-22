@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare Strings</title>
+</head>
+<body>
+    <script>
+        const userString1=prompt("Please Enter First String:");
+        document.write("First String is:\n"+userString1);
+        document.write("<br>");
+        const userString2=prompt("Please Enter Second String:");
+        document.write("Second String is:\n"+userString2);
+        document.write("<br>");
+       /*  const result = userString1.toUpperCase()=userString2.toUpperCase(); */
+
+        if(userString1.toUpperCase()==userString2.toUpperCase()){
+            document.write("Both Strings are  Same");
+        }
+        else{
+            document.write("Both Strings are Different");
+        }
+    </script>
+</body>
+</html>
