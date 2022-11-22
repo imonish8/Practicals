@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>String: Reverse, Replace, Palindorome Test</title>
+</head>
+<body>
+    
+    <script>
+      //take input string
+      var userString = prompt("Please enter String:");
+      document.write("User Entered String:\n"+userString);
+      document.write("<br>");
+    
+      //reverse userString   task-1
+      reverseString = userString.split('').reverse().join('');
+      document.write("Reverse String :\n\n"+reverseString);
+
+      //replace string       task-2
+      document.write("<h3>Replace String</h3>");
+      let replaceString = userString.replace(userString,"experiment");
+      document.write("<h4>replace string is</h4>"+replaceString);
+      document.write("<br>")
+
+      //Palindrome test      task-3
+      document.write("Palindrome check test");
+      const length = userString.length;
+      for (const index = 0; index < length/2; index++) {
+        if(userString[i]!= userString[length-1-i]){
+        document.write("<h2>Not a Palindrome</h2>");
+        }
+        document.write("<h2> it is a Palindrome</h2>");
+      }
+    </script>
+</body>
+</html>
