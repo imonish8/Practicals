@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array, Specific Element Check, Empty it</title>
+</head>
+<body>
+    <script>
+        //Take input from user
+        var array = [];
+        var n = prompt("Enter the Size of the Array:");
+        // take inputs for each element
+        for (let index = 0; index < n; index++) {
+            array[index]= prompt('Enter array element'+(index+1));
+        }
+        //display element of array
+        for (let index = 0; index < n; index++) {
+            document.write(array[index]+"  ");
+            } 
+            document.write("<br>");
+               document.write("Size of the array is \n"+n);
+               document.write("<br>");
+               //search for element
+        
+        var findElement = prompt("Enter Element to find in Array : ");
+        document.write("Finding Element"+findElement);
+        document.write("<br>");
+        let found =false;
+        function searchElements(findElement){
+            let found = array.includes(findElement);
+            if(found==true){
+                document.write("Element "+findElement+" is present in the array");
+            }
+            else{
+                document.write("Element "+findElement+" is not present in the array");
+            }
+        }
+        searchElements(findElement);
+        document.write("<br>")
+        //empty array completely
+        array.splice(0,array.length);
+        if(array.length==0){
+            document.write("Array is empty now");
+        }
+
+        document.write(array);
+        
+
+    </script>
+</body>
+</html>
